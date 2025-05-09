@@ -1,18 +1,35 @@
-// Header.js
-
-import React, { useState } from "react";
-import "./Header.css"; // لو عندك CSS خاص بالـ Header
+import React, { useState, useEffect } from "react";
+import "./Header.css";
 
 const Header = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [navbarScrolled, setNavbarScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setNavbarScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header>
-      <div className="nav">
+      <div className={`nav ${navbarScrolled ? "scrolled" : ""}`}>
         <a href="#">
-          <img src={process.env.PUBLIC_URL + "/logo.png"} alt="Techtra Logo" />
+          <img
+            src={process.env.PUBLIC_URL + "/logo.png"}
+            alt="Techtra Logo"
+            className="logo w-100"
+          />
         </a>
-        <ul>
+        <div
+          className="menu-icon"
+          onClick={() => setMenuOpen((prev) => !prev)}
+        >
+          &#9776;
+        </div>
+        <ul className={menuOpen ? "open" : ""}>
           <li>
             <a href="#">Home</a>
           </li>
@@ -32,17 +49,11 @@ const Header = () => {
           Welcome to <span className="span">Techtra</span> company
         </h1>
         <p>
-          Every challenge is a new opportunity for growth: With our innovative
+          Every challenge is a new opportunity for growth. With our innovative
           technical solutions, we help your company achieve its goals and
-          enhance its performance in the market with the highest levels of
-          efficiency and professionalism.
+          enhance its market performance with efficiency and professionalism.
         </p>
-        <a
-          href="#"
-          className={`btn ${isHovered ? "hover" : ""}`}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-        >
+        <a href="#" className="btn">
           Get Started
         </a>
       </div>

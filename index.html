@@ -1,228 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Techtra</title>
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
-    crossorigin="anonymous"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css"
-  />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techtra</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="fonts/icomoon/style.css">
-    <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
-    
 
-<header>
+
+  <header>
+
+
     <div class="nav">
-        <a href="#"><img src="image/logo.jpg" alt=" Techtra Logo"></a>
-        <ul>
-            <li><a onclick="scrollToHome()" href="#">Home</a></li>
-            <li ><a onclick="scrollToAbout()" href="#">About us</a></li>
-            <li ><a onclick="scrollToOur()" href="#">our servives</a></li>
-            <li><a onclick="scrollToContt()" href="#">Contact us</a></li>
-        </ul>
-    </div>
-    <div class="content" id="home">
-        <h1>Welcome to <span class="span">Techtra</span> company</h1>
-<p>Every challenge is a new opportunity for growth: With our innovative technical solutions <br>
-we help your company achieve its goals and enhance its performance in the market <br>with the highest levels of efficiency <br> and professionalism."
-            .</p>
-        <a href="#" class="btn">Get Start</a>
-    </div>
-    <section class="about-section" id="about-section">
-        <div class="about-left">
-          <img id="about-img" src="image/img1.png" alt="About Us Image">
-        </div>
-    
-        <div class="about-right" id="about-text">
-          <h2>The journey<br>of a thousand miles<br>begins with one step.</h2>
-          <p>
-            when asked, "If you could wish for one thing only, What would that wish be?" almost everyone: from beauty pageant contestants, to politicians,
-          </p>
-          <button class="read-more-btn" onclick="handleReadMore()">
-            Read More <span>▶</span>
-          </button>
-        </div>
-      </section>
-      <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"><div><div class="service-page"><div class="header-section"><h3 class="header-subtitle">Our Awesome Services</h3><h1 class="header-title">We Are <span class="header-title-span">Dedicated</span> To Serve You All Time</h1></div><div class="services-section"><div class="service-card"><div class="service-icon">🎨</div><h2 class="service-title">UI/UX Design</h2><p class="service-text">Your business is unique, so your design should be too. We create unique user experiences.</p></div><div class="service-card"><div class="service-icon">📋</div><h2 class="service-title">Project Management</h2><p class="service-text">We manage everything with proper planning to deliver on time with top quality.</p></div><div class="service-card"><div class="service-icon">💻</div><h2 class="service-title">Web Development</h2><p class="service-text">We build responsive and high-performance websites for businesses and individuals.</p></div></div><div class="bottom-section"><div class="bottom-image"><img alt="Typing on laptop" class="bottom-image-style" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"></div><div class="bottom-content"><h2 class="bottom-title">Simple Solutions!</h2><p>"Effortless solutions for everyday challenges"</p><p>"Easy answers for every problem"</p><p>"Streaming complexity, one solution at a time"</p><ul class="bottom-list"><li class="bottom-list-item"><span>1</span><div>Contact Us<p>"We are here to help, Contact us now!"</p></div></li><li class="bottom-list-item"><span>2</span><div>Consult<p>"Consult with us to achieve your goals"</p></div></li><li class="bottom-list-item"><span>3</span><div>Place Order<p>"Ready to buy? Place your order now"</p></div></li><li class="bottom-list-item"><span>4</span><div>Payment<p>"Easy and secure payment processing"</p></div></li></ul><button class="bottom-button">Get Started</button></div></div></div></div></div>
-    <div class="feedBack" >
-        <p class="opn">what clients says</p>
-        <div class="carousel-container">
-          <button class="carousel-control-prev" onclick="moveLeft()">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
+      <a class="logo ms-3" href="#">
+        <img class="logo-img" src="image/logo.jpg" alt="Techtra Logo">
+      </a>
 
-          <div class="carousel-window">
-            <div class="carousel-track" id="track">
-              <div class="card">
-                <div class="cardd">
-                  <img src="image/1.jpg" class="card-img-top" alt="..." />
-                  <span>Chloe Parker</span>
-                  <div class="card-body">
-                    <p class="card-text">
-                      Outstanding work! The website redesign exceeded our
-                      expectations.
-                    </p>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
+      <div class="menu-toggle d-md-none" onclick="toggleMenu()">
+        <i id="toggleIcon" class="bi bi-list"></i>
+      </div>
+
+      <ul id="navLinks">
+        <li><a onclick="scrollToHome()" href="#home">Home</a></li>
+        <li><a onclick="scrollToAbout()" href="#about-text">About us</a></li>
+        <li><a onclick="scrollToOur()" href="#root">Our Services</a></li>
+        <li><a onclick="scrollToContt()" href="#cont">Contact us</a></li>
+      </ul>
+    </div>
+
+
+
+    <div class="content" id="home">
+      <h1>Welcome to <span class="span">Techtra</span> company</h1>
+      <p>Every challenge is a new opportunity for growth: With our innovative technical solutions <br>
+        we help your company achieve its goals and enhance its performance in the market <br>with the highest levels of
+        efficiency <br> and professionalism."
+        .</p>
+      <a href="#" class="btn">Get Start</a>
+    </div>
+  </header>
+  <section class="about-section" id="about-section">
+    <div class="about-left">
+      <img id="about-img" src="image/img1.png" alt="About Us Image">
+    </div>
+
+    <div class="about-right" id="about-text">
+      <h2>The journey<br>of a thousand miles<br>begins with one step.</h2>
+      <p>
+        when asked, "If you could wish for one thing only, What would that wish be?" almost everyone: from beauty
+        pageant contestants, to politicians,
+      </p>
+      <button class="read-more-btn" onclick="handleReadMore()">
+        Read More <span>▶</span>
+      </button>
+    </div>
+  </section>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <div>
+      <div class="service-page">
+        <div class="header-section">
+          <h3 class="header-subtitle">Our Awesome Services</h3>
+          <h1 class="header-title">We Are <span class="header-title-span">Dedicated</span> To Serve You All Time</h1>
+        </div>
+        <div class="services-section">
+          <div class="service-card">
+            <div class="service-icon">🎨</div>
+            <h2 class="service-title">UI/UX Design</h2>
+            <p class="service-text">Your business is unique, so your design should be too. We create unique user
+              experiences.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">📋</div>
+            <h2 class="service-title">Project Management</h2>
+            <p class="service-text">We manage everything with proper planning to deliver on time with top quality.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">💻</div>
+            <h2 class="service-title">Web Development</h2>
+            <p class="service-text">We build responsive and high-performance websites for businesses and individuals.
+            </p>
+          </div>
+        </div>
+        <div class="bottom-section">
+          <div class="bottom-image"><img alt="Typing on laptop" class="bottom-image-style"
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"></div>
+          <div class="bottom-content">
+            <h2 class="bottom-title">Simple Solutions!</h2>
+            <p>"Effortless solutions for everyday challenges"</p>
+            <p>"Easy answers for every problem"</p>
+            <p>"Streaming complexity, one solution at a time"</p>
+            <ul class="bottom-list">
+              <li class="bottom-list-item"><span>1</span>
+                <div>Contact Us<p>"We are here to help, Contact us now!"</p>
                 </div>
-              </div>
-              <div class="card">
-                <div class="cardd">
-                  <img src="image/2.jpg" class="card-img-top" alt="..." />
-                  <span>Lucas Hayes</span>
-                  <div class="card-body">
-                    <p class="card-text">
-                      Excellent experience from start to finish.
-                    </p>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-half"></i>
-                  </div>
+              </li>
+              <li class="bottom-list-item"><span>2</span>
+                <div>Consult<p>"Consult with us to achieve your goals"</p>
                 </div>
-              </div>
-              <div class="card">
-                <div class="cardd">
-                  <img src="image/3.jpg" class="card-img-top" alt="..." />
-                  <span>Ava Mitchell</span>
-                  <div class="card-body">
-                    <p class="card-text">
-                      Everything was completed on time, and the quality was
-                      top-notch.
-                    </p>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star"></i>
-                  </div>
+              </li>
+              <li class="bottom-list-item"><span>3</span>
+                <div>Place Order<p>"Ready to buy? Place your order now"</p>
                 </div>
-              </div>
-              <div class="card">
-                <div class="cardd">
-                  <img src="image/4.jpg" class="card-img-top" alt="..." />
-                  <span>Mason Turner</span>
-                  <div class="card-body">
-                    <p class="card-text">
-                      Fantastic job on our software upgrade!
-                    </p>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-half"></i>
-                    <i class="bi bi-star"></i>
-                  </div>
+              </li>
+              <li class="bottom-list-item"><span>4</span>
+                <div>Payment<p>"Easy and secure payment processing"</p>
                 </div>
-              </div>
-              <div class="card">
-                <div class="cardd">
-                  <img src="image/5.jpg" class="card-img-top" alt="..." />
-                  <span>Isabella Foster</span>
-                  <div class="card-body">
-                    <p class="card-text">
-                      Amazing collaboration from beginning to end.
-                    </p>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="cardd">
-                  <img src="image/6.jpg" class="card-img-top" alt="..." />
-                  <span>Ethan Ramirez</span>
-                  <div class="card-body">
-                    <p class="card-text">
-                      Professional, reliable, and skilled — that’s how I describe
-                      your team.
-                    </p>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-half"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="cardd">
-                  <img src="image/7.jpg" class="card-img-top" alt="..." />
-                  <span>Sophia Bennett</span>
-                  <div class="card-body">
-                    <p class="card-text">
-                      We couldn’t be happier with your service.
-                    </p>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="cardd">
-                  <img src="image/8.jpg" class="card-img-top" alt="..." />
-                  <span>Liam Carter</span>
-                  <div class="card-body">
-                    <p class="card-text">
-                      SYour team delivered beyond what we imagined.
-                    </p>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                </div>
+              </li>
+            </ul><button class="bottom-button">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="feedBack">
+    <p class="opn">what clients says</p>
+    <div class="carousel-container">
+
+      <div class="carousel-window">
+        <div class="carousel-track" id="track">
+          <div class="card">
+            <div class="cardd">
+              <img src="image/1.jpg" class="card-img-top" alt="..." />
+              <span>Chloe Parker</span>
+              <div class="card-body">
+                <p class="card-text">
+                  Outstanding work! The website redesign exceeded our
+                  expectations.
+                </p>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
               </div>
             </div>
           </div>
-        
-          <button
-            class="carousel-control-next"
-            onclick="moveRight()"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="card">
+            <div class="cardd">
+              <img src="image/2.jpg" class="card-img-top" alt="..." />
+              <span>Lucas Hayes</span>
+              <div class="card-body">
+                <p class="card-text">
+                  Excellent experience from start to finish.
+                </p>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardd">
+              <img src="image/3.jpg" class="card-img-top" alt="..." />
+              <span>Ava Mitchell</span>
+              <div class="card-body">
+                <p class="card-text">
+                  Everything was completed on time, and the quality was
+                  top-notch.
+                </p>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardd">
+              <img src="image/4.jpg" class="card-img-top" alt="..." />
+              <span>Mason Turner</span>
+              <div class="card-body">
+                <p class="card-text">
+                  Fantastic job on our software upgrade!
+                </p>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardd">
+              <img src="image/5.jpg" class="card-img-top" alt="..." />
+              <span>Isabella Foster</span>
+              <div class="card-body">
+                <p class="card-text">
+                  Amazing collaboration from beginning to end.
+                </p>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardd">
+              <img src="image/6.jpg" class="card-img-top" alt="..." />
+              <span>Ethan Ramirez</span>
+              <div class="card-body">
+                <p class="card-text">
+                  Professional, reliable, and skilled — that’s how I describe
+                  your team.
+                </p>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardd">
+              <img src="image/7.jpg" class="card-img-top" alt="..." />
+              <span>Sophia Bennett</span>
+              <div class="card-body">
+                <p class="card-text">
+                  We couldn’t be happier with your service.
+                </p>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardd">
+              <img src="image/8.jpg" class="card-img-top" alt="..." />
+              <span>Liam Carter</span>
+              <div class="card-body">
+                <p class="card-text">
+                  SYour team delivered beyond what we imagined.
+                </p>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-<!-- start contact -->
- 
-<div class="content" id="cont">
-    
-    <div class="container" >
+    </div>
+  </div>
+  <!-- start contact -->
+
+
+  <div class="content" id="cont">
+
+    <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10">
-          
+
 
           <div class="row justify-content-center">
             <div class="col-md-6">
-              
+
               <h3 class="heading mb-4">Let’s chat together</h3>
               <p>Techtra is here to support you with fast, reliable, and personalized tech solutions</p>
 
@@ -231,8 +283,8 @@ we help your company achieve its goals and enhance its performance in the market
 
             </div>
             <div class="col-md-6">
-              
-              <form class="mb-5" method="post" id="contactForm" name="contactForm">
+
+              <!-- <form class="mb-5" method="post" id="contactForm" name="contactForm">
                 <div class="row">
                   <div class="col-md-12 form-group">
                     <input type="text" class="form-control" name="name" id="name" placeholder="Your name" required>
@@ -250,18 +302,36 @@ we help your company achieve its goals and enhance its performance in the market
                 </div>
                 <div class="row">
                   <div class="col-md-12 form-group">
-                    <textarea class="form-control" name="message" id="message" cols="30" rows="7" placeholder="Write your message"></textarea>
+                    <textarea class="form-control" name="message" id="message" cols="30" rows="7"
+                      placeholder="Write your message"></textarea>
                   </div>
-                </div>  
+                </div>
                 <div class="row">
                   <div class="col-12">
                     <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4">
-                  <span class="submitting"></span>
+                    <span class="submitting"></span>
                   </div>
+                </div>
+              </form> -->
+
+              <form>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" class="form-control" placeholder="Your Email" required>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <div class="text-center">
+                  <button class="btn btn-primary">Send Message</button>
                 </div>
               </form>
 
-              <div id="form-message-warning mt-4"></div> 
+              <div id="form-message-warning mt-4"></div>
               <div id="form-message-success">
                 Your message was sent, thank you!
               </div>
@@ -272,36 +342,31 @@ we help your company achieve its goals and enhance its performance in the market
     </div>
 
   </div>
-<!-- end contact -->
-      <footer>
-        <div class="footcon" style="background-color: #4a5662">
-          <img class="logo" src="image/logozz.jpg" alt="" />
-  
-          <div class="iconS" style="text-align: center">
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href="https://www.facebook.com/share/1HBPT15tzS/"
-              ><i class="bi bi-facebook"></i
-            ></a>
-            <a href="https://www.linkedin.com/company/techtracompany/"
-              ><i class="bi bi-linkedin"></i
-            ></a>
-            <a href="techtra.site@gmail.com"
-              ><i class="bi bi-envelope-at-fill"></i
-            ></a>
-          </div>
-        </div>
-      </footer>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-        crossorigin="anonymous"
-      ></script>
-      <script src="style/JS.js"></script>
-    <script src="style/style.js"></script>
-    <script src="jsContact/jquery-3.3.1.min.js"></script>
-    <script src="jsContact/popper.min.js"></script>
-    <script src="jsContact/bootstrap.min.js"></script>
-    <script src="jsContact/jquery.validate.min.js"></script>
-    <script src="jsContact/main.js" type="module"></script>
+  <!-- end contact -->
+  <footer class="text-center p-4 bg-dark text-white">
+    <div class="footcon">
+      <img class="logo" src="image/logozz.jpg" alt="" />
+
+      <p>&copy; 2025 Techtra. All Rights Reserved. Crafted with passion and innovation.</p>
+
+      <div class="iconS" style="text-align: center">
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/share/1HBPT15tzS/"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.linkedin.com/company/techtracompany/"><i class="bi bi-linkedin"></i></a>
+        <a href="techtra.site@gmail.com"><i class="bi bi-envelope-at-fill"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+  <script src="style/JS.js"></script>
+  <script src="style/style.js"></script>
+  <script src="jsContact/jquery-3.3.1.min.js"></script>
+  <script src="jsContact/popper.min.js"></script>
+  <script src="jsContact/bootstrap.min.js"></script>
+  <script src="jsContact/jquery.validate.min.js"></script>
+  <script src="jsContact/main.js" type="module"></script>
+
+
 </body>
-</header>
