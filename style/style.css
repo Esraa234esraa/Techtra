@@ -88,8 +88,6 @@ h1, h2, h3, h4, h5, h6,
 /* Responsive */
 @media (max-width: 800px) {
   .nav {
-    /* flex-direction: column;
-    align-items: flex-start; */
     position: relative;
     transition: all .4s ease;
     position: fixed;
@@ -103,7 +101,6 @@ h1, h2, h3, h4, h5, h6,
     margin-bottom: 10px;
   }
   
- 
   #navLinks {
     display: none;
     flex-direction: column;
@@ -442,21 +439,15 @@ margin-left: 20px;
 @media (min-width: 768px) {
   .bottom-section {
     flex-direction: row;
-    /* justify-content: space-between; */
-
     gap: 1rem;
   }
 }
 
 .bottom-image {
   width: 50%;
-  /* height: 60%; */
   margin: 0 auto;
   position: relative;
 }
-
-
-
 .bottom-image-style {
   position: absolute;
   height: 25rem;
@@ -467,31 +458,22 @@ margin-left: 20px;
   margin: 0 auto;
   outline-width: 1rem;
   outline-style: solid;
-  outline-color: #304069;
-  
+  outline-color: #304069; 
 }
-
-
 .bottom-content {
   max-width: 100%;
   display: flex;
       flex-direction: column;
       align-items: center;}
-
 .bottom-content p {
   margin: 5px 5px 5px 0;
 }
-
-
-
 .bottom-title {
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
-
 .bottom-list {
-  /* list-style-type: disc; */
   list-style: none;
   margin-left: 1rem;
   margin-bottom: .8rem;
@@ -500,7 +482,6 @@ margin-left: 20px;
   z-index: 1;
   position: relative;
 }
-
 .bottom-list::after {
   content: "";
   position: absolute;
@@ -511,13 +492,11 @@ margin-left: 20px;
   height: 90%;
   background-color: #81c9f0;
 }
-
 .bottom-list-item {
   margin-top: 2rem;
   font-size: 1.2rem;
   display: flex;
 }
-
 .bottom-list-item span {
   margin-right: 20px;
   padding: 25px;
@@ -532,8 +511,6 @@ margin-left: 20px;
   justify-content: center;
   align-items: center;
 }
-
-
 .bottom-button {
   margin-top: 1.5rem;
   background-color: #81c9f0;
@@ -550,11 +527,9 @@ margin-left: 20px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-
 .bottom-button:hover {
   background-color: #76b8eb;
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -565,11 +540,9 @@ margin-left: 20px;
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #61dafb;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -579,40 +552,32 @@ margin-left: 20px;
     transform: rotate(360deg);
   }
 }
-
 /* feedback + footer */
 .feedBack {
   margin-top: 10%;
   margin-bottom: 10%;
   position: sticky;
 }
-
 .opn {
   font-size: 2em;
   text-align: center;
   text-transform: capitalize;
 }
-
 .carousel-container {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-
-
 .carousel-window {
   width: 100%;
   overflow: hidden;
 }
-
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease;
 }
-
 .card {
   min-width: 400px;
-  /* max-width: 14rem; */
   background-color: lightblue;
   margin-right: 10px;
   display: flex;
@@ -622,23 +587,11 @@ margin-left: 20px;
   border-radius: 8px;
   padding: 1%;
 }
-
-/* .nav-btn {
-  font-size: 24px;
-  padding: 10px;
-  cursor: pointer;
-} */
-
 .card img {
   width: 150px;
   height: 150px;
   border-radius: 49%;
 }
-/* 
-.bi {
-  color: #ffa621;
-} */
-
 .logo {
   width: 10%;
   display: block;
@@ -646,34 +599,15 @@ margin-left: 20px;
   padding: 1%;
   margin: auto;
 }
-
 .iconS {
   font-size: xx-large;
 }
-
-/* .carousel-control-next {
-  height: 55%;
-  width: 6%;
-  margin-top: 355vh;
-} */
-
 .carousel-control-prev,
 .carousel-control-next {
   height: 30%;
   margin: auto;
   width: 6%;
-  /* margin-top: 355vh; */
 }
-
-
-
-
-
-/* .nav.scrolled {
-  background-color: #2C3E50;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-} */
-
 .carousel-track {
   display: flex;
   gap: 20px;
@@ -689,62 +623,34 @@ margin-left: 20px;
     transform: translateX(-50%);
   }
 }
-
-
-
-
 .logo-img {
   width: 70px;
-  /* صغرنا الصورة */
   height: auto;
 }
-
-
-/* .nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav ul li {
-  margin-left: 20px;
-} */
-
-
 .carousel-window {
   overflow: hidden;
   scroll-behavior:auto;
   width: 100%;
 }
-
 .carousel-track {
   display: flex;
   gap: 16px;
   transition: transform 0.5s ease-in-out;
 }
-
-
-
 .logo-img {
   height: 40px;
-  /* تصغير حجم اللوجو */
   width: auto;
 }
-
-
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
-
 .services-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.6rem;
 }
-
 .service-card {
   flex: 1 1 18.8rem;
   max-width: 19rem;
@@ -760,9 +666,6 @@ margin-left: 20px;
   }
 }
 @media (max-width: 767px) {
-
-
-  
   .about-section {
     flex-direction: column;
     height: auto;
@@ -772,40 +675,31 @@ margin-left: 20px;
   .about-right {
     padding: 20px;
   }
-
- 
-
   .carousel-track .card {
     width: 250px;
   }
   .about-left img {
     max-width: 100%;
   }
-
   .about-right p {
     width: 100%;
   }
-
   .services-section {
     flex-direction: row;
     align-items: center;
   }
-
   .cardd {
     width: 100%;
   }
-
   .carousel-track {
     flex-wrap: nowrap;
-    overflow-x: auto;
+    overflow-x: scroll;
   }
-
   .service-card {
     margin-bottom: 1.8rem;
     width: 50%;
   }
 .header-section .header-title , .header-section .span{
-
   font-size: 1.5rem;
 }
   .bottom-content {
@@ -813,7 +707,6 @@ margin-left: 20px;
     left: 0;
 
   }
-
   .bottom-image-style {
     width: 6rem;
     height: 6rem;
@@ -821,19 +714,15 @@ margin-left: 20px;
     outline-width: 15px;
     outline-color: #1a3c5a;
   }
-
   .bottom-title {
     font-size: 1.4rem;
   }
-
   .bottom-list-item {
     font-size: 0.5rem;
   }
-
   .bottom-list-item span {
     font-size: 0.8rem;
   }
-
 }
 footer{
   background-color: #1a3c5a;
@@ -872,7 +761,6 @@ footer{
     -webkit-box-shadow: none;
     box-shadow: none;
     border-color: #000; }
-  
   .btn1 {
     border: none;
     border-radius: .5rem !important; }
@@ -944,24 +832,6 @@ footer{
   display: flex;
   justify-content: center;
 }
-/* @media (max-width: 1200px) {
-  header .content {
-    padding-top: 4rem;
-  }
-  header .content  h1 {
-    font-size: 1.2rem;
-    
-  }
-  
-  header .content p {
-    font-size: .9rem;
-  }
-  header .content .btn{
-    padding: .8rem 1rem ;
-    font-size: 1rem;
-  }
-  
-} */
 
 @media (max-width: 768px) {
   header .content{
@@ -981,8 +851,6 @@ footer{
     padding: .7rem 1.5rem ;
     font-size: 1.3rem;  }
 }
-
-/* عند الشاشات الصغيرة جدًا (مثال: 480px أو أصغر) */
 @media (max-width: 480px) {
   .content {
     padding: 2rem 1rem;
@@ -1000,8 +868,6 @@ footer{
     padding: 6px 12px;
   }
 }
-
-
 @media (max-width: 768px) {
   .about-section {
     padding: 3rem 1rem;
@@ -1080,7 +946,5 @@ footer{
     width: 70%;
     
   }
-  .bottom-content ul{
-    /* margin-left: 2rem; */
-  }
+ 
 }
