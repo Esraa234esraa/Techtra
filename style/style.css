@@ -320,7 +320,7 @@ margin-left: 20px;
 .header-section {
   text-align: center;
   padding: 2.5rem 1rem;
-  max-width: 550px;
+  max-width: 35rem;
 
   margin: 0 auto 20px auto;
 }
@@ -353,6 +353,7 @@ margin-left: 20px;
 @media (min-width: 768px) {
   .services-section {
     flex-direction: row;
+
   }
 }
 
@@ -430,17 +431,20 @@ margin-left: 20px;
   color: #ffffff;
   padding: 3rem 0.75rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
-
+.bottom-cont{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 @media (min-width: 768px) {
   .bottom-section {
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 
-    gap: 40px;
+    gap: 1rem;
   }
 }
 
@@ -455,28 +459,24 @@ margin-left: 20px;
 
 .bottom-image-style {
   position: absolute;
-  height: 38rem;
+  height: 25rem;
   top: -200px;
-  left: -60px;
-
+  left: -50px;
   max-width: 100%;
   object-fit: cover;
   margin: 0 auto;
-  outline-width: 25px;
+  outline-width: 1rem;
   outline-style: solid;
   outline-color: #304069;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  
 }
 
 
 .bottom-content {
   max-width: 100%;
-  /* margin-left: 120px; */
-}
+  display: flex;
+      flex-direction: column;
+      align-items: center;}
 
 .bottom-content p {
   margin: 5px 5px 5px 0;
@@ -493,8 +493,8 @@ margin-left: 20px;
 .bottom-list {
   /* list-style-type: disc; */
   list-style: none;
-  margin-left: 1.25rem;
-  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-bottom: .8rem;
   padding: 0;
   margin-left: 0;
   z-index: 1;
@@ -519,9 +519,9 @@ margin-left: 20px;
 }
 
 .bottom-list-item span {
-  margin-right: 25px;
+  margin-right: 20px;
   padding: 25px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   background-color: #81c9f0;
   border-radius: 50%;
   width: 13px;
@@ -613,7 +613,6 @@ margin-left: 20px;
 .card {
   min-width: 400px;
   /* max-width: 14rem; */
-  height: fit-content;
   background-color: lightblue;
   margin-right: 10px;
   display: flex;
@@ -743,18 +742,27 @@ margin-left: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 1.6rem;
 }
 
 .service-card {
-  flex: 1 1 300px;
-  max-width: 300px;
+  flex: 1 1 18.8rem;
+  max-width: 19rem;
+  margin-top: 1.25rem;
 }
+@media (max-width: 1420) {
+  .bottom-list{
+    width: 90%;
+  }
+  .bottom-image-style{
+    top: -230px;
 
-@media (max-width: 768px) {
+  }
+}
+@media (max-width: 767px) {
 
 
- 
+  
   .about-section {
     flex-direction: column;
     height: auto;
@@ -779,7 +787,7 @@ margin-left: 20px;
   }
 
   .services-section {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
@@ -793,10 +801,13 @@ margin-left: 20px;
   }
 
   .service-card {
-    margin-bottom: 30px;
-    width: 100%;
+    margin-bottom: 1.8rem;
+    width: 50%;
   }
+.header-section .header-title , .header-section .span{
 
+  font-size: 1.5rem;
+}
   .bottom-content {
     width: 40%;
     left: 0;
@@ -914,10 +925,24 @@ footer{
     font-size: 12px;
     color: #000; }
   
+
+.bottom-title{
+  color: #ffa621;
+}
 @media (max-width: 480px) {
   .carousel-track .card {
     width: 200px;
   }
+ 
+  .bottom-button {
+    width: 30%;
+    padding: 2%;
+  }
+}
+.button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 /* @media (max-width: 1200px) {
   header .content {
@@ -979,12 +1004,11 @@ footer{
 
 @media (max-width: 768px) {
   .about-section {
-    flex-direction: column;
     padding: 3rem 1rem;
   }
 
   .about-left img {
-    max-width: 60%;
+    max-width: 80%;
   }
 
   .about-right h2 {
@@ -1004,12 +1028,59 @@ footer{
   .about-right h2 {
     font-size: 1.5rem;
   }
-
+  .about-left img {
+    max-width: 60%;
+  }
   .about-right p {
     font-size: 0.9rem;
   }
 
   .read-more-btn {
     padding: 6px 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .bottom-image,
+  .bottom-content {
+    flex: 1 1 50%;
+  }
+}
+
+/* موبايل: عامود + الصورة 30% */
+@media (max-width: 767px) {
+  .bottom-cont {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .bottom-image {
+    width: 50%;
+    align-self: center;
+  }
+
+  .bottom-content  {
+    width: 100%;
+  }
+  .bottom-content p{
+    align-items: center;
+  }
+  .bottom-title {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 4rem;
+  }
+.bottom-list-item div{
+  font-size: 1rem;
+}
+.bottom-list-item div p{
+  font-size: .8rem;
+}
+  .bottom-button {
+    width: 70%;
+    
+  }
+  .bottom-content ul{
+    /* margin-left: 2rem; */
   }
 }
