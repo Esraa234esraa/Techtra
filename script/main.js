@@ -1,7 +1,6 @@
 
 $(function() {
     'use strict';
-
     var contactForm = function() {
         if ($('#contactForm').length > 0) {
             $( "#contactForm" ).validate({
@@ -25,7 +24,6 @@ $(function() {
                 submitHandler: function(form) {
                     var $submit = $('.submitting'),
                         waitText = 'Submitting...';
-
                     fetch('http://localhost:5000/contact', {
                         method: 'POST',
                         headers: {
