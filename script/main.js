@@ -24,7 +24,7 @@ $(function() {
                 submitHandler: function(form) {
                     var $submit = $('.submitting'),
                         waitText = 'Submitting...';
-                    fetch('http://localhost:5000/contact', {
+                    fetch('https://rechtra.vercel.app/contact', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
