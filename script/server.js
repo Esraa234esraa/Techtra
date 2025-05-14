@@ -6,6 +6,7 @@ const express = require("express");
 const nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+console.log('hi mahmoud');
 
 const app = express();
 app.use(cors());
