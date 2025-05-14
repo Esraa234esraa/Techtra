@@ -10,7 +10,9 @@ app.use(cors());
 app.use(bodyParser.json());
 console.log("GMAIL_USER:", gmailUser);
 console.log("GMAIL_PASS:", gmailPass);
-
+app.get("/welcome", (req, res) => {
+  res.send("Welcome to the server!");
+})
 app.post("/contact", async (req, res) => {
   console.log("Request Body:", req.body);
   const { name, email, message } = req.body;
