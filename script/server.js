@@ -13,7 +13,7 @@ app.use(cors());
 app.use(bodyParser.json());
 console.log("GMAIL_USER:", gmailUser);
 console.log("GMAIL_PASS:", gmailPass);
-app.get("/", (req, res) => {
+app.get("/welcome", (req, res) => {
   res.send("Hello from the server!");
 })
 app.post("/contact", async (req, res) => {
